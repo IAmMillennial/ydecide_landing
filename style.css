@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: rgb(72, 1, 119); */
+    background: linear-gradient(to bottom, rgb(72, 1, 119), rgb(1, 32, 119), rgb(72, 1, 119));
+}
+
+
+/* ############### HEADER #################### */
+header {
+    margin-top: 1.5rem;
+    margin-bottom: -3rem;
+}
+
+header>ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgb(50, 0, 63);
+}
+
+.nav-link {
+    color: whitesmoke;
+    text-decoration: inherit;
+    background-color: transparent;
+    border: none;
+}
+
+.nav-link:hover {
+    /* color: rgb(188, 146, 255); */
+    /* text-shadow: 2px 2px 4px rgb(255, 255, 255); */
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(204, 0, 255);
+}
+
+h1 {
+    color: rgb(228, 228, 228);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+h1 > span {
+    color: rgb(204, 0, 255);
+    text-shadow: 1px 1px 1px #fff;
+}
+
+/* ############### SECTION DIVIDER #################### */
+
+.section_divider {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+
+/* ############### CAROUSEL #################### */
+
+.carousel {
+    padding: 0;
+    margin-top: 2rem;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    height: 100%;
+    transition: transform 1s ease;
+}
+
+.carousel-item {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 20%;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px rgb(33, 0, 54);
+}
+
+.carousel-item p {
+    flex-basis: 40%;
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+
+/* ############### MISSION #################### */
+
+.heading-p {
+    color: rgb(228, 228, 228);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.heading-p span {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.left-texted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem 4rem 2rem;
+}
+
+.right-texted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem 0 2rem;
+}
+
+.mission-text-content {
+    flex-basis: 60%;
+    margin: 0 2rem 2rem 2rem;
+}
+
+.mission-heading {
+    color: rgb(228, 228, 228);
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.mission-text {
+    color: rgb(228, 228, 228);
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+.mission-text ul {
+    margin-left: 2rem;
+}
+
+.mission-text li {
+    margin: 1rem 0;
+}
+
+.mission-img {
+    width: 40%;
+    height: fit-content;
+    border-radius: 30% 0 30% 0;
+    box-shadow: 10px 10px 4px rgb(33, 0, 54);
+}
+
+
+/* ############### SERVICES #################### */
+.heading-services {
+    color: rgb(228, 228, 228);
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+}
+
+.services-content-element {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.services-content-element img {
+    width: 5rem;
+    height: 5rem;
+    background-size: 100%;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: auto;
+    justify-content: center;
+    justify-items: start;
+    align-items: start;
+    column-gap: 3rem;
+    row-gap: 7rem;
+    column-gap: 4rem;
+    color: rgb(228, 228, 228);
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.for-students {
+    margin-bottom: 5rem;
+}
+
+.for-mentors {
+    margin-bottom: 5rem;
+}
+
+.services-button {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.services button {
+    width: 14rem;
+    height: 2.5rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    background-color: deeppink;
+    color: rgb(228, 228, 228);
+    border: 0;
+    border-radius: 5px;
+}
+
+.services button:hover {
+    font-family: sans-serif;
+    background-color: rgb(228, 228, 228);
+    color: rgb(114, 0, 143);
+    cursor: pointer;
+}
+
+/* ############### STUDENT and MENTOR BUTTONS #################### */
+.choose-role-buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.choose-role-buttons a {
+    flex-basis: 30%;
+    border-radius: 10%;
+    display: inline-block;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choose-role-buttons img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.choose-role-buttons img:hover {
+    filter: none;
+    transform: scale(1.1);
+}
+
+.choose-role-buttons p {
+    position: absolute;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(204, 0, 255);
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    font-weight: 800;
+
+}
+
+
+/* ############### GET IN TOUCH #################### */
+.get-in-touch {
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(228, 228, 228);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#call-to-action {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.get-in-touch span {
+    font-weight: 1000;
+}
+
+
+/* ############### FOOTER #################### */
+footer {
+    margin: 2rem;
+    font-family: sans-serif;
+    color: rgb(228, 228, 228);
+    font-size: 1rem;
+}
