@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'MainTextFont';
+    src: url('./fonts/SourceSans3-VariableFont_wght.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +10,6 @@
 }
 
 body {
-    /* background-color: rgb(72, 1, 119); */
     background: linear-gradient(to bottom, rgb(72, 1, 119), rgb(1, 32, 119), rgb(72, 1, 119));
 }
 
@@ -23,7 +27,7 @@ header>ul {
 
     list-style-type: none;
     font-size: 1.5rem;
-    font-family: sans-serif;
+    font-family: 'MainTextFont', sans-serif;
     font-weight: 800;
     text-shadow: 2px 2px 4px rgb(50, 0, 63);
 }
@@ -36,8 +40,6 @@ header>ul {
 }
 
 .nav-link:hover {
-    /* color: rgb(188, 146, 255); */
-    /* text-shadow: 2px 2px 4px rgb(255, 255, 255); */
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px rgb(204, 0, 255);
 }
@@ -45,7 +47,7 @@ header>ul {
 h1 {
     color: rgb(228, 228, 228);
     text-align: center;
-    font-family: sans-serif;
+    font-family: sans-serif, 'MainTextFont';
     font-size: 2.5rem;
     margin-bottom: 4rem;
 }
@@ -101,6 +103,7 @@ h1 > span {
     flex-basis: 40%;
     color: whitesmoke;
     font-size: 1.5rem;
+    font-family: 'MainTextFont', sans-serif;
 }
 
 
@@ -109,7 +112,7 @@ h1 > span {
 .heading-p {
     color: rgb(228, 228, 228);
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'MainTextFont', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 5rem;
 }
@@ -141,7 +144,7 @@ h1 > span {
 .mission-heading {
     color: rgb(228, 228, 228);
     text-align: left;
-    font-family: sans-serif;
+    font-family: 'MainTextFont', sans-serif;
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 2rem;
@@ -150,7 +153,7 @@ h1 > span {
 .mission-text {
     color: rgb(228, 228, 228);
     text-align: left;
-    font-family: sans-serif;
+    font-family: 'MainTextFont', sans-serif;
     font-size: 1.2rem;
 }
 
@@ -173,7 +176,7 @@ h1 > span {
 /* ############### SERVICES #################### */
 .heading-services {
     color: rgb(228, 228, 228);
-    font-family: sans-serif;
+    font-family: 'MainTextFont', sans-serif;
     font-size: 2.5rem;
     font-weight: 800;
     margin-top: 3rem;
@@ -204,7 +207,7 @@ h1 > span {
     row-gap: 7rem;
     column-gap: 4rem;
     color: rgb(228, 228, 228);
-    font-family: sans-serif;
+    font-family: 'MainTextFont', sans-serif;
     font-size: 1.2rem;
     font-weight: 800;
 }
@@ -226,7 +229,7 @@ h1 > span {
 .services button {
     width: 14rem;
     height: 2.5rem;
-    font-family: sans-serif;
+    font-family: 'MainTextFont', sans-serif;
     font-size: 1rem;
     background-color: deeppink;
     color: rgb(228, 228, 228);
@@ -235,7 +238,7 @@ h1 > span {
 }
 
 .services button:hover {
-    font-family: sans-serif;
+    font-family: 'MainTextFont', sans-serif;
     background-color: rgb(228, 228, 228);
     color: rgb(114, 0, 143);
     cursor: pointer;
@@ -281,7 +284,7 @@ h1 > span {
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px rgb(204, 0, 255);
     font-size: 1.7rem;
-    font-family: sans-serif;
+    font-family: 'MainTextFont', sans-serif;
     font-weight: 800;
 
 }
@@ -290,7 +293,7 @@ h1 > span {
 /* ############### GET IN TOUCH #################### */
 .get-in-touch {
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'MainTextFont', sans-serif;
     color: rgb(228, 228, 228);
     font-size: 1.3rem;
     font-weight: 600;
@@ -310,7 +313,7 @@ h1 > span {
 /* ############### FOOTER #################### */
 footer {
     margin: 2rem;
-    font-family: sans-serif;
+    font-family: 'MainTextFont', sans-serif;
     color: rgb(228, 228, 228);
     font-size: 1rem;
 }
