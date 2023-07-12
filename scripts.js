@@ -1,16 +1,9 @@
-const carousel = document.querySelector('.carousel-inner');
-let currentIndex = 0;
+var header = document.querySelector("header");
 
-function showSlide(index) {
-  carousel.style.transform = `translateX(-${index * 100}%)`;
-}
-
-function nextSlide() {
-  currentIndex++;
-  if (currentIndex >= carousel.children.length) {
-    currentIndex = 0;
+window.onscroll = () => {
+  if (window.scrollY > 0) {
+    header.classList.add('coloured');
+  } else {
+    header.classList.remove('coloured');
   }
-  showSlide(currentIndex);
-}
-
-setInterval(nextSlide, 7000);
+};

@@ -16,20 +16,34 @@ body {
 
 /* ############### HEADER #################### */
 header {
-    margin-top: 1.5rem;
-    margin-bottom: -3rem;
+    padding: 0.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    height: 3rem;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
 }
 
-header>ul {
+header.coloured{
+    background-color: rgba(75, 0, 161, 0.8);
+}
+
+header ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
     list-style-type: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'MainTextFont', sans-serif;
     font-weight: 800;
     text-shadow: 2px 2px 4px rgb(50, 0, 63);
+}
+
+header img {
+    width: 30%;
 }
 
 .nav-link {
@@ -44,17 +58,52 @@ header>ul {
     text-shadow: 2px 2px 4px rgb(204, 0, 255);
 }
 
-h1 {
-    color: rgb(228, 228, 228);
-    text-align: center;
-    font-family: sans-serif, 'MainTextFont';
-    font-size: 2.5rem;
-    margin-bottom: 4rem;
+/* ############### MAIN IDEA ##################### */
+
+#main-idea {
+    position: relative;
 }
 
-h1 > span {
-    color: rgb(204, 0, 255);
-    text-shadow: 1px 1px 1px #fff;
+#main-idea img {
+    width: 100%;
+}
+
+#goal-list {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    font-family: 'MainTextFont', sans-serif;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+#goal-list-elements {
+    text-align: center;
+    color: rgb(44, 3, 77);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    
+}
+
+.goal-list-element-2 {
+    font-size: 2.2rem;
+    /* text-shadow: 1px 1px 2px rgb(255, 255, 255); */
+}
+
+.goal-list-element-3 {
+    font-size: 1.9rem;
+    /* text-shadow: 1px 1px 2px rgb(255, 255, 255); */
+}
+
+.goal-list-element-4 {
+    font-size: 1.5rem;
 }
 
 /* ############### SECTION DIVIDER #################### */
@@ -65,113 +114,6 @@ h1 > span {
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
-
-
-/* ############### CAROUSEL #################### */
-
-.carousel {
-    padding: 0;
-    margin-top: 2rem;
-    width: 100%;
-    height: 40vh;
-    overflow: hidden;
-}
-
-.carousel-inner {
-    display: flex;
-    height: 100%;
-    transition: transform 1s ease;
-}
-
-.carousel-item {
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    column-gap: 2rem;
-    align-items: center;
-    width: 100%;
-}
-
-.carousel-item img {
-    width: 20%;
-    height: auto;
-    border-radius: 5%;
-    box-shadow: 5px 5px 10px rgb(33, 0, 54);
-}
-
-.carousel-item p {
-    flex-basis: 40%;
-    color: whitesmoke;
-    font-size: 1.5rem;
-    font-family: 'MainTextFont', sans-serif;
-}
-
-
-/* ############### MISSION #################### */
-
-.heading-p {
-    color: rgb(228, 228, 228);
-    text-align: center;
-    font-family: 'MainTextFont', sans-serif;
-    font-size: 2.5rem;
-    margin-bottom: 5rem;
-}
-
-.heading-p span {
-    font-weight: 800;
-    font-size: 3rem;
-}
-
-.left-texted {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 2rem 4rem 2rem;
-}
-
-.right-texted {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 2rem 0 2rem;
-}
-
-.mission-text-content {
-    flex-basis: 60%;
-    margin: 0 2rem 2rem 2rem;
-}
-
-.mission-heading {
-    color: rgb(228, 228, 228);
-    text-align: left;
-    font-family: 'MainTextFont', sans-serif;
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 2rem;
-}
-
-.mission-text {
-    color: rgb(228, 228, 228);
-    text-align: left;
-    font-family: 'MainTextFont', sans-serif;
-    font-size: 1.2rem;
-}
-
-.mission-text ul {
-    margin-left: 2rem;
-}
-
-.mission-text li {
-    margin: 1rem 0;
-}
-
-.mission-img {
-    width: 40%;
-    height: fit-content;
-    border-radius: 30% 0 30% 0;
-    box-shadow: 10px 10px 4px rgb(33, 0, 54);
-}
-
 
 /* ############### SERVICES #################### */
 .heading-services {
@@ -242,6 +184,121 @@ h1 > span {
     background-color: rgb(228, 228, 228);
     color: rgb(114, 0, 143);
     cursor: pointer;
+}
+
+
+/* ############### MISSION #################### */
+
+.heading-p {
+    color: rgb(228, 228, 228);
+    text-align: center;
+    font-family: 'MainTextFont', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.heading-p span {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.left-texted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem 4rem 2rem;
+}
+
+.right-texted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem 0 2rem;
+}
+
+.mission-text-content {
+    flex-basis: 60%;
+    margin: 0 2rem 2rem 2rem;
+}
+
+.mission-heading {
+    color: rgb(228, 228, 228);
+    text-align: left;
+    font-family: 'MainTextFont', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.mission-text {
+    color: rgb(228, 228, 228);
+    text-align: left;
+    font-family: 'MainTextFont', sans-serif;
+    font-size: 1.2rem;
+}
+
+.mission-text ul {
+    margin-left: 2rem;
+}
+
+.mission-text li {
+    margin: 1rem 0;
+}
+
+.mission-img {
+    width: 40%;
+    height: fit-content;
+    border-radius: 30% 0 30% 0;
+    box-shadow: 10px 10px 4px rgb(33, 0, 54);
+}
+
+.left-image {
+    margin-right: 2rem;
+}
+
+/* ############### MENTORS #################### */
+#mentors-list {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.mentor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    width: 20%;
+}
+
+.mentor img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.mentors-list-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.mentor-name {
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.mentor-level {
+    color: rgb(0, 247, 255);
+    font-size: 1.2rem;
+}
+
+.about-mentor {
+    color: white;
+    font-size: 1.2rem;
 }
 
 /* ############### STUDENT and MENTOR BUTTONS #################### */
