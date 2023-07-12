@@ -14,15 +14,18 @@
     <header>
         <ul class="header-nav">
             <li><a href="#" class="nav-link">yDecide</a></li>
-            <li><a href="#" class="nav-link">Обучение</a></li>
-            <li><a href="#" class="nav-link">Менторы</a></li>
-            <li><a href="#" class="nav-link">Бесплатное пробное занятие</a></li>
+            <li><a href="#education" onclick="scrollToEducation(event)" class="nav-link">Обучение</a></li>
+            <li><a href="#mission" onclick="scrollToMission(event)" class="nav-link">Идея yDecide</a></li>
+            <li><a href="#mentors" onclick="scrollToMentors(event)" class="nav-link">Менторы</a></li>
+            <li><a href="#learn" onclick="scrollToLearn(event)" class="nav-link highlighted-text">Бесплатное пробное
+                    занятие</a></li>
         </ul>
     </header>
 
     <main>
         <div id="main-idea">
-            <img src="./images/header_image.jpg" alt="learning with mentor online">
+            <img id="logo-img" src="./images/icons/logo.svg" alt="logo">
+            <img id="background-img" src="./images/header_image.jpg" alt="learning with mentor online">
             <div id="goal-list">
                 <div id="goal-list-elements">
                     <p class="goal-list-element-4">Создай свой IT-проект</p>
@@ -38,8 +41,7 @@
         </div>
 
         <!-- YDECIDE SERVICES -->
-        <div class="services">
-
+        <div id="services" class="services">
             <div class="for-students">
                 <p class="heading-services">Обучение</p>
                 <div class="services-content">
@@ -48,12 +50,12 @@
                         <p>Найдите ментора, который подходит именно Вам</p>
                     </div>
                     <div class="services-content-element">
-                        <img src="images/icons/schedule.svg" alt="schedule icon">
-                        <p>Настройте свое расписание совместно с ментором</p>
-                    </div>
-                    <div class="services-content-element">
                         <img src="images/icons/goals.svg" alt="schedule icon">
                         <p>Ставьте цели и получайте быстрый результат</p>
+                    </div>
+                    <div class="services-content-element">
+                        <img src="images/icons/schedule.svg" alt="schedule icon">
+                        <p>Настройте свое расписание совместно с ментором</p>
                     </div>
                     <div class="services-content-element">
                         <img src="images/icons/trial.svg" alt="schedule icon">
@@ -71,8 +73,11 @@
 
 
         <!-- ABOUT MISSION -->
-        <div class="mission">
-            <p class="heading-p">ЗАНОВО ОТКРЫВАЯ<br><span>ПЕРСОНАЛЬНОЕ ОБУЧЕНИЕ</span></p>
+        <div id="mission" class="mission">
+            <div id="logo-div">
+                <img id="logo" src="./images/icons/logo.png" alt="logo">
+            </div>
+            <p class="heading-p">Тебе решать, каким будет твое<br><span>ПЕРСОНАЛЬНОЕ ОБУЧЕНИЕ</span></p>
 
             <div class="mission-content">
                 <div class="left-texted">
@@ -81,10 +86,14 @@
                         <div class="mission-text">
                             <p>Обучение с ментором поддерживает все преимущества персонального формата образования:</p>
                             <ul>
-                                <li>Индивидуальный подход</li>
-                                <li>Мотивация и поддержка</li>
-                                <li>Экспертиза и опыт</li>
-                                <li>Обратная связь и оценка</li>
+                                <li>Индивидуальный подход - <span class="mission-higlighted">никаких шаблонных
+                                        уроков</span></li>
+                                <li>Мотивация и поддержка - <span class="mission-higlighted">амбициозная цель
+                                        достижима</span></li>
+                                <li>Экспертиза и опыт - <span class="mission-higlighted">узнайте все, что вас
+                                        интересует</span></li>
+                                <li>Обратная связь и оценка - <span class="mission-higlighted">учитесь на своих
+                                        ошибках</span></li>
                             </ul>
                         </div>
                     </div>
@@ -95,7 +104,7 @@
                     <div class="mission-text-content">
                         <p class="mission-heading">ТРАНСФОРМАЦИЯ ОБРАЗОВАНИЯ ЧЕРЕЗ ТЕХНОЛОГИИ</p>
                         <div class="mission-text">
-                            <p>Автоматизация околообразовательных процессов:</p>
+                            <p>Технологии позволяют усовершенствовать процесс обучения:</p>
                             <ul>
                                 <li>Связь учителя и ученика из любой точки мира 24/7</li>
                                 <li>Образовательный контент с автопроверкой</li>
@@ -111,7 +120,7 @@
         <hr class="section_divider">
 
         <!-- MENTORS -->
-        <div class="mentors">
+        <div id="mentors" class="mentors">
             <p class="heading-p"><span>НАШИ МЕНТОРЫ</span></p>
             <div id="mentors-list">
                 <div class="mentor">
@@ -119,7 +128,14 @@
                     <div class="mentors-list-text">
                         <p class="mentor-name">Сергей Кочетков</p>
                         <p class="mentor-level">Senior Backend<br>Software Developer</p>
-                        <p class="about-mentor">12+ года в разработке.<br>Разработка высоконагруженных FinTech систем. Написание SOLID поддерживаемого и тестируемого кода на разных языках программирования.</p>
+                        <p class="what-to-learn">Подготовка к собеседованиям<br>Код-ревью<br>Обучение разработке сложных
+                            высоконагруженных систем</p>
+                        <details class="about-mentor text-left">
+                            <summary>Подробнее</summary>
+                            <p>12+ года в разработке.<br>Разработка высоконагруженных FinTech систем. Написание SOLID
+                                поддерживаемого и тестируемого кода на разных языках программирования.</p>
+                        </details>
+                        <p class="price-hour text-right">от 9000 тг за занятие</p>
                     </div>
                 </div>
                 <div class="mentor">
@@ -127,8 +143,14 @@
                     <div class="mentors-list-text">
                         <p class="mentor-name">Эренчин Темир</p>
                         <p class="mentor-level">Middle iOS<br>Software Developer</p>
-                        <p class="about-mentor">3+ года в разработке.<br>Стек: Swift, iOS, Core Data, JSON,
-                            Cocoa, MVP · MVVM · UIKit · Client/server</p>
+                        <p class="what-to-learn">Обучение разработке iOS/MacOS приложений<br>Код-ревью<br>Подготовка к
+                            собеседованиям<br></p>
+                        <details class="about-mentor text-left">
+                            <summary>Подробнее</summary>
+                            <p>3+ года в разработке.<br>Стек: Swift, iOS, Core Data, JSON, Cocoa, MVP · MVVM · UIKit ·
+                                Client/server</p>
+                        </details>
+                        <p class="price-hour text-right">от 5400 тг за занятие</p>
                     </div>
                 </div>
                 <div class="mentor">
@@ -136,8 +158,15 @@
                     <div class="mentors-list-text">
                         <p class="mentor-name">Кара-Сал Эрес</p>
                         <p class="mentor-level">Junior Python<br>Fullstack Developer</p>
-                        <p class="about-mentor">1+ года в преподавании.<br>Стек: Python, Django, HTML, CSS, JS,
-                            SQL.</p>
+                        <p class="what-to-learn">Основы программирования<br>Языки программирования Python и
+                            JavaScript<br>Разработка приложений</p>
+                        <details class="about-mentor text-left">
+                            <summary>Подробнее</summary>
+                            <p>1+ года в преподавании.<br>Основы разработки приложений (игры, сайты,
+                                десктоп)<br>Подготовка к экзаменам, олимпиадам.<br>Стек: Python, Django, HTML, CSS, JS,
+                                SQL.</p>
+                        </details>
+                        <p class="price-hour text-right">от 3600 тг за занятие</p>
                     </div>
                 </div>
                 <div class="mentor">
@@ -145,8 +174,14 @@
                     <div class="mentors-list-text">
                         <p class="mentor-name">Бехер Тимур</p>
                         <p class="mentor-level">Junior Python<br>Data Analyst</p>
-                        <p class="about-mentor">3.5+ в преподавании.<br>Стек: Python, NymPy, Pandas, SQL.
-                        </p>
+                        <p class="what-to-learn">Основы программирования<br>Язык программирования Python<br>Обучение
+                            анализу данных</p>
+                        <details class="about-mentor text-left">
+                            <summary>Подробнее</summary>
+                            <p>3.5+ в преподавании.<br>Основы анализа больших данных на Python<br>Разработка
+                                приложений<br>Стек: Python, NymPy, Pandas, SQL.</p>
+                        </details>
+                        <p class="price-hour text-right">от 3600 тг за занятие</p>
                     </div>
                 </div>
             </div>
@@ -155,19 +190,22 @@
         <hr class="section_divider">
 
         <!-- BUTTONS FOR STUDENT AND MENTOR -->
-        <div class="choose-role-buttons">
-            <a href="#">
-                <div class="image-container">
-                    <img src="images/be_student.jpg" alt="student">
-                    <p>НАЧАТЬ УЧИТЬСЯ</p>
-                </div>
-            </a>
-            <a href="#">
-                <div class="image-container">
-                    <img src="images/be_mentor.jpg" alt="mentor">
-                    <p>СТАТЬ МЕНТОРОМ</p>
-                </div>
-            </a>
+        <div id="roles" class="roles">
+            <p class="heading-roles">НАЧАТЬ ОБУЧЕНИЕ</p>
+            <p class="learn-heading">Заполните анкету на Google Forms и мы с Вами свяжемся</p>
+            <div class="choose-role-buttons"><a href="#">
+                    <div class="image-container">
+                        <img src="images/be_student.jpg" alt="student">
+                        <p>НАЧАТЬ УЧИТЬСЯ</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="image-container">
+                        <img src="images/be_mentor.jpg" alt="mentor">
+                        <p>СТАТЬ МЕНТОРОМ</p>
+                    </div>
+                </a>
+            </div>
         </div>
 
         <hr class="section_divider">

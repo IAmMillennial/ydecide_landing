@@ -26,7 +26,7 @@ header {
     transition: background-color 0.5s ease;
 }
 
-header.coloured{
+header.coloured {
     background-color: rgba(75, 0, 161, 0.8);
 }
 
@@ -58,13 +58,27 @@ header img {
     text-shadow: 2px 2px 4px rgb(204, 0, 255);
 }
 
+.highlighted-text {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0.2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 /* ############### MAIN IDEA ##################### */
 
 #main-idea {
     position: relative;
 }
 
-#main-idea img {
+#logo-img {
+    position: absolute;
+    z-index: 1;
+    width: 20%;
+    padding: 3rem;
+}
+
+#background-img {
     width: 100%;
 }
 
@@ -89,7 +103,7 @@ header img {
     text-align: center;
     color: rgb(44, 3, 77);
     text-shadow: 1px 1px 2px rgb(255, 255, 255);
-    
+
 }
 
 .goal-list-element-2 {
@@ -189,6 +203,16 @@ header img {
 
 /* ############### MISSION #################### */
 
+#logo-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+#logo {
+    width: 20%;
+}
+
 .heading-p {
     color: rgb(228, 228, 228);
     text-align: center;
@@ -245,6 +269,11 @@ header img {
     margin: 1rem 0;
 }
 
+.mission-higlighted {
+    color: rgb(0, 247, 255);
+    font-weight: 800;
+}
+
 .mission-img {
     width: 40%;
     height: fit-content;
@@ -296,12 +325,46 @@ header img {
     font-size: 1.2rem;
 }
 
+.what-to-learn {
+    color: white;
+    font-size: 1.2rem;
+}
+
 .about-mentor {
+    color: rgba(0, 225, 255, 0.815);
+    font-size: 1.2rem;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.price-hour {
     color: white;
     font-size: 1.2rem;
 }
 
 /* ############### STUDENT and MENTOR BUTTONS #################### */
+.heading-roles {
+    color: rgb(228, 228, 228);
+    text-align: center;
+    font-family: 'MainTextFont', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+
+.learn-heading {
+    color: rgb(228, 228, 228);
+    text-align: center;
+    font-family: 'MainTextFont', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
 .choose-role-buttons {
     display: flex;
     justify-content: center;
@@ -373,4 +436,24 @@ footer {
     font-family: 'MainTextFont', sans-serif;
     color: rgb(228, 228, 228);
     font-size: 1rem;
+}
+
+
+/* ############## MEDIA ##################### */
+@media (max-width: 1000px) {
+    html {
+      font-size: 14px;
+    }
+}
+
+@media (max-width: 860px) {
+    html {
+      font-size: 12px;
+    }
+}
+
+@media (max-width: 730px) {
+    html {
+      font-size: 10px;
+    }
 }
