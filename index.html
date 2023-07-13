@@ -13,10 +13,11 @@
 
     <header>
         <ul class="header-nav">
-            <li><a href="#" class="nav-link">yDecide</a></li>
+            <li><a href="#top" onclick="scrollToTop(event)" class="nav-link">yDecide</a></li>
             <li><a href="#education" onclick="scrollToEducation(event)" class="nav-link">Обучение</a></li>
             <li><a href="#mission" onclick="scrollToMission(event)" class="nav-link">Идея yDecide</a></li>
             <li><a href="#mentors" onclick="scrollToMentors(event)" class="nav-link">Менторы</a></li>
+            <li><a href="#contacts" onclick="scrollToContacts(event)" class="nav-link">Контакты</a></li>
             <li><a href="#learn" onclick="scrollToLearn(event)" class="nav-link highlighted-text">Бесплатное пробное
                     занятие</a></li>
         </ul>
@@ -63,7 +64,7 @@
                     </div>
                 </div>
                 <div class="services-button">
-                    <button type="button">ЗАПИСАТЬСЯ НА ЗАНЯТИЕ</button>
+                    <button type="button" onclick="openLink()">ЗАПИСАТЬСЯ НА ЗАНЯТИЕ</button>
                 </div>
             </div>
         </div>
@@ -139,7 +140,11 @@
                     </div>
                 </div>
                 <div class="mentor">
-                    <img src="./images/mentors/temir_erenchin.jpg" alt="programming mentor">
+                    <div style="position: relative; width: 100%;">
+                        <img src="./images/mentors/temir_erenchin.jpg" alt="programming mentor">
+                        <img src="./images/icons/process_stoped.png" alt="process stoped"
+                            style="border: 2px solid red; border-radius: 1px; position: absolute; top: 75%; left: 75%; transform: translate(-50%, -50%) rotate(-45deg);">
+                    </div>
                     <div class="mentors-list-text">
                         <p class="mentor-name">Эренчин Темир</p>
                         <p class="mentor-level">Middle iOS<br>Software Developer</p>
@@ -157,7 +162,7 @@
                     <img src="./images/mentors/eres_karasal.jpg" alt="programming mentor">
                     <div class="mentors-list-text">
                         <p class="mentor-name">Кара-Сал Эрес</p>
-                        <p class="mentor-level">Junior Python<br>Fullstack Developer</p>
+                        <p class="mentor-level">Junior Python<br>Software Developer</p>
                         <p class="what-to-learn">Основы программирования<br>Языки программирования Python и
                             JavaScript<br>Разработка приложений</p>
                         <details class="about-mentor text-left">
@@ -170,7 +175,7 @@
                     </div>
                 </div>
                 <div class="mentor">
-                    <img src="./images/mentors/mentor_placeholder_man.jpg" alt="programming mentor">
+                    <img src="./images/mentors/timur_bekher.jpg" alt="programming mentor">
                     <div class="mentors-list-text">
                         <p class="mentor-name">Бехер Тимур</p>
                         <p class="mentor-level">Junior Python<br>Data Analyst</p>
@@ -193,13 +198,16 @@
         <div id="roles" class="roles">
             <p class="heading-roles">НАЧАТЬ ОБУЧЕНИЕ</p>
             <p class="learn-heading">Заполните анкету на Google Forms и мы с Вами свяжемся</p>
-            <div class="choose-role-buttons"><a href="#">
+            <div class="choose-role-buttons"><a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfNB2fk43A2B3tZvHKT2pVpRiCh6fYt6j51I4Mll56rlE4F6g/viewform?usp=sharing"
+                    target="_blank">
                     <div class="image-container">
                         <img src="images/be_student.jpg" alt="student">
                         <p>НАЧАТЬ УЧИТЬСЯ</p>
                     </div>
                 </a>
-                <a href="#">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8NDBUFRo_QlOR-1Rm1SAjhAa3KiJrX9iZQuT7_Y7ze_3mEA/viewform?usp=sharing"
+                    target="_blank">
                     <div class="image-container">
                         <img src="images/be_mentor.jpg" alt="mentor">
                         <p>СТАТЬ МЕНТОРОМ</p>
@@ -211,9 +219,21 @@
         <hr class="section_divider">
 
         <!-- GET IN TOUCH -->
-        <div class="get-in-touch">
+        <div id="get-in-touch" class="get-in-touch">
             <p id="call-to-action">ОСТАЛИСЬ ВОПРОСЫ?</p>
-            <p>Свяжитесь с нами по адресу <span>ydecide.company@gmail.com</span></p>
+            <p>Свяжитесь с нами</p>
+            <div class="contacts">
+                <img src="./images/icons/email.svg" alt="email icon">
+                <p><span>ydecide.company@gmail.com</span></p>
+            </div>
+            <div class="contacts">
+                <img src="./images/icons/telephone.svg" alt="telephone icon">
+                <a href="https://t.me/rs_karasal" target="_blank"><img src="./images/icons/telegram.svg"
+                        alt="telegram icon"></a>
+                <a href="https://wa.me/77002999240" target="_blank"><img src="./images/icons/whatsapp.svg"
+                        alt="whatsapp icon"></a>
+                <p><span>+7 700 299 92 40</span></p>
+            </div>
         </div>
 
         <script src="scripts.js"></script>
